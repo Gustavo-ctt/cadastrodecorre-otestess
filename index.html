@@ -1,0 +1,45 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>Cadastro de Chamados</title>  
+</head>  
+<body>  
+    <header>  
+        <h1>RDR TRANSPORTES</h1>  
+    </header>  
+
+    <h1>Cadastro de Chamados</h1>  
+    <form id="form-chamado">  
+        <label for="numeroDT">Número de DT:</label>  
+        <input type="text" id="numeroDT" required>  
+
+        <label for="setor">Setor:</label>  
+        <select id="setor" required>  
+            <option value="Logística">Logística</option>  
+            <option value="Operações">Operações</option>  
+            <option value="Financeiro">Financeiro</option>  
+        </select>  
+
+        <label for="responsavel">Responsável:</label>  
+        <select id="responsavel" required>  
+            <option value="João">João</option>  
+            <option value="Maria">Maria</option>  
+            <option value="Pedro">Pedro</option>  
+        </select>  
+
+        <label for="motivo">Motivo:</label>  
+        <textarea id="motivo" required></textarea>  
+
+        <label for="dataRegistro">Data de Registro:</label>  
+        <input type="text" id="dataRegistro" value="" readonly>  
+
+        <button type="submit">Cadastrar Chamado</button>  
+        <a href="lista.html" class="link">Ir para Lista de Chamados</a>  
+    </form>  
+
+    <script src="script.js"></script>  
+</body>  
+</html>
